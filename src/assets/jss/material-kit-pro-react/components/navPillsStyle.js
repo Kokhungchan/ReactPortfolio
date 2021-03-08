@@ -76,7 +76,9 @@ const navPillsStyle = theme => ({
       paddingRight: "15px"
     },
     "& .react-swipeable-view-container > div[aria-hidden=false]" :{
-      height: "100%"
+      height: "100%",
+      overflow: "hidden !important",
+      padding: "15px"
     },
     "& .react-swipeable-view-container > div[aria-hidden=true]" :{
       height: "0"

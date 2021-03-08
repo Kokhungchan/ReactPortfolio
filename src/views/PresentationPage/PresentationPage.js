@@ -41,6 +41,7 @@ import photo2 from "assets/img/examples/photo2.jpg";
 import photo1 from "assets/img/examples/photo1.jpg";
 import project1 from "assets/img/project1.png";
 import project2 from "assets/img/project2.png";
+import project3 from "assets/img/project3.png";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 import companyLogo1 from "assets/img/logo1.jpg";
 import companyLogo2 from "assets/img/logo2.jpg";
@@ -309,6 +310,48 @@ export default function ProfilePage({ ...rest }) {
                                       </h5>
                                       <div>
                                         <Button round color="white" onClick={() => navigate("https://kokhungchan.github.io/")}>
+                                          <Subject /> Visit
+                                        </Button>
+                                      </div>
+                                    </CardBody>
+                                  </div>
+                              </Card>
+                              </div>
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12} lg={6}>
+                            <div className={classes.rotatingCardContainer}>
+                              <Card
+                                background
+                                className={classes.cardRotate}
+                              >
+                                <div 
+                                  className={
+                                    classes.front + " " + classes.wrapperBackground
+                                  }
+                                  style={{
+                                    backgroundImage: `url(${project3})`
+                                  }}>
+                                    <CardBody background className={classes.cardBody}>
+                                      <Badge color="primary" className={classes.badge}>
+                                        React Native
+                                      </Badge>
+                                      <a href="#pablo">
+                                        <h2 className={classes.cardTitleWhite}>
+                                          Expense App 
+                                        </h2>
+                                      </a>
+                                    </CardBody>
+                                </div>
+                                <div className={classes.back + " " + classes.wrapperWhite}
+                                style={{
+                                  backgroundImage: `url(${project3})`
+                                }}>
+                                    <CardBody className={classes.cardBodyRotate}>
+                                      <h5 className={classes.cardCategorySocialWhite}>
+                                        <i className="fab fa-github" /> Info
+                                      </h5>
+                                      <div>
+                                        <Button round color="white" onClick={() => navigate("https://github.com/Kokhungchan/ExpenseApp")}>
                                           <Subject /> Visit
                                         </Button>
                                       </div>
